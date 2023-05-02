@@ -5,6 +5,7 @@ import Home from "../views/Home";
 import CountryDetails from "../views/CountryDetails";
 import NotFound from "../views/NotFound";
 
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -46,7 +47,11 @@ const routes = [
       title: "Not FOund",
     },
   },
+  
+ 
+
 ];
+
 
 const router = new VueRouter({
   mode: "history",

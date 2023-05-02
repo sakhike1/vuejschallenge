@@ -1,5 +1,5 @@
 <template>
-  <v-card @click="gotoDetails">
+  <v-card class="hover:scale-95 divide-y" @click="gotoDetails">
 
     <v-img height="200" :src="flag"></v-img>
     <v-card-text>
@@ -7,7 +7,10 @@
       <div><b class="text-xs">Population: </b>{{ population | numberFormatter }}</div>
       <div><b class="text-xs">Region: </b>{{ region }}</div>
       <div><b class="text-xs">Capital: </b>{{ capital }}</div>
+      <div><b class="text-xs">latlng: </b>{{ latlng }}</div>
+      <div><b class="text-xs">Capital: </b>{{ capital }}</div>
     </v-card-text>
+
 
   </v-card>
 </template>
@@ -21,6 +24,7 @@ export default {
     population: { type: Number, default: 0 },
     region: { type: String, default: "NA" },
     capital: { type: String, default: "NA" },
+    latlng: { type: Number, default: "NA" },
     alpha3Code: { type: String, default: "NA" },
   },
   methods: {

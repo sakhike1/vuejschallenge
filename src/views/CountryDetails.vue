@@ -1,13 +1,12 @@
 <template>
   <v-container>
-
-
     <v-row><v-col class=""><v-btn
           class="btn relative inline-flex  items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group"
           @click="goBack"><v-icon>mdi-arrow-left</v-icon> Back </v-btn></v-col></v-row>
+
     <v-row>
-      <v-col md="3" sm="12" xs="12">
-        <v-img class="rounded-lg" :src="country.flag"></v-img>
+      <v-col md="3" sm="12" xs="8">
+        <v-img class="rounded-lg hover:scale-110 border-slate-300 " :src="country.flag"></v-img>
       </v-col>
       <v-col md="6" sm="12" xs="12" class="pa-2">
         <div class="mt-8">
@@ -25,8 +24,11 @@
                   <div><b>Region: </b>{{ country.region }}</div>
                   <div><b>Sub Region: </b>{{ country.subregion }}</div>
                   <div><b>Capital: </b>{{ country.capital }}</div>
+                  <div><b>longitude: </b>{{ country.latlng }}</div>
+
                 </div>
-                <div></div>
+
+
               </div>
             </v-col>
           </v-row>
@@ -87,6 +89,6 @@ export default {
   flex: 1 1 auto;
   max-width: 100%;
   position: relative;
-  background: linear-gradient(to right, rgb(134, 239, 172), rgb(192, 132, 252));
+  background: linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219))
 }
 </style>
