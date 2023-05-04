@@ -11,7 +11,7 @@
                     </router-link>
                     <button type="button"
                         class="text-white  hover:-translate-y-1 hover:scale-110  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2">
-                        <router-link to="Contact"
+                        <router-link to="Mylist"
                             class="relative inline-flex items-center justify-center  p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group">
                             <span
                                 class="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
@@ -63,7 +63,7 @@ export default {
 
 
 
-.v-application {
+.v-application a {
     color: #aeb7c0;
 }
 </style>

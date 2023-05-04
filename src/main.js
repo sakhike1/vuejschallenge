@@ -13,7 +13,7 @@ const api = axios.create({
   baseURL:
     process.env.VUE_APP_API_URL !== undefined
       ? process.env.VUE_APP_API_URL
-      : "https://restcountries.com/v3.1/all",
+      : "https://restcountries.com/v3/all",
 });
 
 //API call prototype variable
@@ -25,5 +25,6 @@ Vue.prototype.$http = api;
 new Vue({
   router,
   vuetify,
+
   render: (h) => h(App),
 }).$mount("#app");

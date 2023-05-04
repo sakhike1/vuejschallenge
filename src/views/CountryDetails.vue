@@ -24,7 +24,7 @@
                   <div><b>Region: </b>{{ country.region }}</div>
                   <div><b>Sub Region: </b>{{ country.subregion }}</div>
                   <div><b>Capital: </b>{{ country.capital }}</div>
-                  <div><b>longitude: </b>{{ country.latlng }}</div>
+                  <div><b>longitude: </b>{{ country.latitude }}</div>
 
                 </div>
 

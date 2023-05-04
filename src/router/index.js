@@ -3,7 +3,8 @@ import VueRouter from "vue-router";
 
 import Home from "../views/Home";
 import CountryDetails from "../views/CountryDetails";
-import NotFound from "../views/NotFound";
+import Mylist from "../views/Mylist";
+import CountryResults from "../views/CountryResults"
 
 
 Vue.use(VueRouter);
@@ -36,15 +37,27 @@ const routes = [
   },
   //404
   {
-    name: "NotFound",
+    name: "Mylist",
     path: "*",
-    component: NotFound,
+    component: Mylist,
     meta: {
       item: null,
       module: {
         id: null,
       },
-      title: "Not FOund",
+      title: "Mylist",
+    },
+  },
+  {
+    name: "CountryResults",
+    path: "*",
+    component: CountryResults,
+    meta: {
+      item: null,
+      module: {
+        id: null,
+      },
+      title: "CountryResults",
     },
   },
   
