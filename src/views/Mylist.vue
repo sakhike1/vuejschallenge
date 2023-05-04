@@ -1,7 +1,15 @@
-<template></template>
+<template>
+    <country-card />
+</template>
   
 <script>
-export default {};
+import CountryCard from "../components/CountryCard.vue";
+export default {
+    name: "Home",
+    components: {
+        "country-card": CountryCard,
+    },
+};
 </script>
   
 <style></style>
